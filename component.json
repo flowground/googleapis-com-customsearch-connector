@@ -1,0 +1,68 @@
+{
+    "title": "CustomSearch",
+    "description": "Searches over a website or collection of websites",
+    "docsUrl": "https://developers.google.com/custom-search/v1/using_rest",
+    "url": "https://api.apis.guru/v2/specs/googleapis.com/customsearch/v1/swagger.json",
+    "envVars": {},
+    "credentials": {
+        "fields": {
+            "server": {
+                "label": "Server",
+                "viewClass": "SelectView",
+                "model": [
+                    "https://www.googleapis.com/customsearch",
+                    "--- Custom URL"
+                ],
+                "required": true
+            },
+            "otherServer": {
+                "label": "Custom Server URL",
+                "viewClass": "TextFieldView"
+            }
+        }
+    },
+    "triggers": {
+        "startFlow": {
+            "main": "./lib/triggers/startFlow.js",
+            "type": "polling",
+            "title": "Start Flow",
+            "fields": {}
+        }
+    },
+    "actions": {
+        "search_cse_list": {
+            "main": "./lib/actions/search_cse_list.js",
+            "title": "Returns metadata about the search performed, metadata about the custom search engine used for the search, and the search results.",
+            "description": "Returns metadata about the search performed, metadata about the custom search engine used for the search, and the search results.",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_cse_list.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_cse_siterestrict_list": {
+            "main": "./lib/actions/search_cse_siterestrict_list.js",
+            "title": "Returns metadata about the search performed, metadata about the custom search engine used for the search, and the search results. Uses a small set of url patterns.",
+            "description": "Returns metadata about the search performed, metadata about the custom search engine used for the search, and the search results. Uses a small set of url patterns.",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_cse_siterestrict_list.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        }
+    }
+}

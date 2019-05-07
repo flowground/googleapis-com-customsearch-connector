@@ -1,0 +1,189 @@
+{
+    "type": "object",
+    "properties": {
+        "c2coff": {
+            "type": "string"
+        },
+        "cr": {
+            "type": "string"
+        },
+        "cx": {
+            "type": "string"
+        },
+        "dateRestrict": {
+            "type": "string"
+        },
+        "exactTerms": {
+            "type": "string"
+        },
+        "excludeTerms": {
+            "type": "string"
+        },
+        "fileType": {
+            "type": "string"
+        },
+        "filter": {
+            "type": "string",
+            "enum": [
+                "0",
+                "1"
+            ]
+        },
+        "gl": {
+            "type": "string"
+        },
+        "googlehost": {
+            "type": "string"
+        },
+        "highRange": {
+            "type": "string"
+        },
+        "hl": {
+            "type": "string"
+        },
+        "hq": {
+            "type": "string"
+        },
+        "imgColorType": {
+            "type": "string",
+            "enum": [
+                "color",
+                "gray",
+                "mono"
+            ]
+        },
+        "imgDominantColor": {
+            "type": "string",
+            "enum": [
+                "black",
+                "blue",
+                "brown",
+                "gray",
+                "green",
+                "orange",
+                "pink",
+                "purple",
+                "red",
+                "teal",
+                "white",
+                "yellow"
+            ]
+        },
+        "imgSize": {
+            "type": "string",
+            "enum": [
+                "huge",
+                "icon",
+                "large",
+                "medium",
+                "small",
+                "xlarge",
+                "xxlarge"
+            ]
+        },
+        "imgType": {
+            "type": "string",
+            "enum": [
+                "clipart",
+                "face",
+                "lineart",
+                "news",
+                "photo"
+            ]
+        },
+        "linkSite": {
+            "type": "string"
+        },
+        "lowRange": {
+            "type": "string"
+        },
+        "lr": {
+            "type": "string",
+            "enum": [
+                "lang_ar",
+                "lang_bg",
+                "lang_ca",
+                "lang_cs",
+                "lang_da",
+                "lang_de",
+                "lang_el",
+                "lang_en",
+                "lang_es",
+                "lang_et",
+                "lang_fi",
+                "lang_fr",
+                "lang_hr",
+                "lang_hu",
+                "lang_id",
+                "lang_is",
+                "lang_it",
+                "lang_iw",
+                "lang_ja",
+                "lang_ko",
+                "lang_lt",
+                "lang_lv",
+                "lang_nl",
+                "lang_no",
+                "lang_pl",
+                "lang_pt",
+                "lang_ro",
+                "lang_ru",
+                "lang_sk",
+                "lang_sl",
+                "lang_sr",
+                "lang_sv",
+                "lang_tr",
+                "lang_zh-CN",
+                "lang_zh-TW"
+            ]
+        },
+        "num": {
+            "type": "integer",
+            "default": 10
+        },
+        "orTerms": {
+            "type": "string"
+        },
+        "q": {
+            "required": true,
+            "type": "string"
+        },
+        "relatedSite": {
+            "type": "string"
+        },
+        "rights": {
+            "type": "string"
+        },
+        "safe": {
+            "type": "string",
+            "enum": [
+                "high",
+                "medium",
+                "off"
+            ],
+            "default": "off"
+        },
+        "searchType": {
+            "type": "string",
+            "enum": [
+                "image"
+            ]
+        },
+        "siteSearch": {
+            "type": "string"
+        },
+        "siteSearchFilter": {
+            "type": "string",
+            "enum": [
+                "e",
+                "i"
+            ]
+        },
+        "sort": {
+            "type": "string"
+        },
+        "start": {
+            "type": "integer"
+        }
+    }
+}
